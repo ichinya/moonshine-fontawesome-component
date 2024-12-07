@@ -1,0 +1,45 @@
+{
+  "resources/css/all.min.css": {
+    "file": "css/moonshine-fontawesome.css",
+    "src": "resources/css/all.min.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "js/moonshine-fontawesome.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/webfonts/fa-brands-400.ttf": {
+    "file": "webfonts/fa-brands-400.ttf",
+    "src": "resources/webfonts/fa-brands-400.ttf"
+  },
+  "resources/webfonts/fa-brands-400.woff2": {
+    "file": "webfonts/fa-brands-400.woff2",
+    "src": "resources/webfonts/fa-brands-400.woff2"
+  },
+  "resources/webfonts/fa-regular-400.ttf": {
+    "file": "webfonts/fa-regular-400.ttf",
+    "src": "resources/webfonts/fa-regular-400.ttf"
+  },
+  "resources/webfonts/fa-regular-400.woff2": {
+    "file": "webfonts/fa-regular-400.woff2",
+    "src": "resources/webfonts/fa-regular-400.woff2"
+  },
+  "resources/webfonts/fa-solid-900.ttf": {
+    "file": "webfonts/fa-solid-900.ttf",
+    "src": "resources/webfonts/fa-solid-900.ttf"
+  },
+  "resources/webfonts/fa-solid-900.woff2": {
+    "file": "webfonts/fa-solid-900.woff2",
+    "src": "resources/webfonts/fa-solid-900.woff2"
+  },
+  "resources/webfonts/fa-v4compatibility.ttf": {
+    "file": "webfonts/fa-v4compatibility.ttf",
+    "src": "resources/webfonts/fa-v4compatibility.ttf"
+  },
+  "resources/webfonts/fa-v4compatibility.woff2": {
+    "file": "webfonts/fa-v4compatibility.woff2",
+    "src": "resources/webfonts/fa-v4compatibility.woff2"
+  }
+}
