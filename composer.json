@@ -1,19 +1,20 @@
 {
-    "name": "ichinya/moonshine-fontawesome-field",
-    "description": "Font Awesome icons selection field for MoonShine",
+    "name": "ichinya/moonshine-fontawesome-component",
+    "description": "Font Awesome icons selection component for MoonShine",
     "keywords": [
         "MoonShine",
-        "MoonShine Field",
+        "MoonShine Component",
+        "Component",
         "Font Awesome",
         "Icons"
     ],
     "type": "library",
     "homepage": "https://moonshine.cutcode.dev",
     "license": "MIT",
-    "version": "1.1",
+    "version": "1.1.1",
     "support": {
-        "issues": "https://github.com/ichinya/moonshine-fontawesome-field/issues",
-        "source": "https://github.com/ichinya/moonshine-fontawesome-field"
+        "issues": "https://github.com/ichinya/moonshine-fontawesome-component/issues",
+        "source": "https://github.com/ichinya/moonshine-fontawesome-component"
     },
     "authors": [
         {
@@ -43,7 +44,7 @@
         }
     },
     "conflict": {
-        "moonshine/moonshine": "<1.52"
+        "moonshine/moonshine": "<3"
     },
     "scripts": {
         "test": "vendor/bin/phpunit",

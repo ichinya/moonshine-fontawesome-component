@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "moonshine-fontawesome-field",
+    "name": "moonshine-fontawesome-component",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

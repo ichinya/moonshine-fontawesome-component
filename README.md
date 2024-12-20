@@ -1,4 +1,4 @@
-# MoonShine FontAwesomeIcon Field for [MoonShine Laravel admin panel](https://moonshine-laravel.com)
+# MoonShine FontAwesomeIcon Component for [MoonShine Laravel admin panel](https://moonshine-laravel.com)
 
 ![PHP](https://img.shields.io/badge/PHP-^8.2-blue.svg?style=flat)
 
@@ -8,18 +8,18 @@
 
 | MoonShine | FontAwesomeIcon |
 |-----------|-----------------|
-| 2.0+      | 1.0+            |
+| 2.0+      | 1.0             |
 | 3.0+      | 1.1+            |
 
 ## Installation
 
 ```bash
-composer require ichinya/moonshine-fontawesome-field
+composer require ichinya/moonshine-fontawesome-component
 ```
 
 ## Usage
 
-You can use `FontAwesome` field in your resources:
+You can use `FontAwesome` component in your resources:
 
 ```php
 <?php
@@ -52,7 +52,7 @@ class CustomResource extends ModelResource
 
 * Macros to Fields.
 * fa-brands fa-telegram => telegram
-* Add more customization options for the FontAwesome field.
+* Add more customization options for the FontAwesome Component.
 
 ## Contributing
 
