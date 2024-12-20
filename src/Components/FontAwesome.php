@@ -2,8 +2,9 @@
 
 namespace Ichinya\FontAwesome\Components;
 
+
 use Illuminate\View\ComponentSlot;
-use MoonShine\Components\MoonShineComponent;
+use MoonShine\UI\Components\MoonShineComponent;
 
 /**
  * @method static static make(string $icon = '', string $color = 'black', string $class = '')
@@ -20,7 +21,7 @@ class FontAwesome extends MoonShineComponent
         public string $class = '',
     )
     {
-
+        parent::__construct();
     }
 
     /**
@@ -59,8 +60,7 @@ class FontAwesome extends MoonShineComponent
 
     public function __toString(): string
     {
-        $r = $this->render();
-        return (string) $r;
+        return (string) value($this->render(), $this);
     }
 
 }

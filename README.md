@@ -9,7 +9,7 @@
 | MoonShine | FontAwesomeIcon |
 |-----------|-----------------|
 | 2.0+      | 1.0+            |
-| 3.0+      | 1.0+            |
+| 3.0+      | 1.1+            |
 
 ## Installation
 
@@ -28,7 +28,7 @@ declare(strict_types=1);
 
 use Ichinya\FontAwesome\Components\FontAwesome;
 
-use MoonShine\Resources\ModelResource;
+use MoonShine\Laravel\Resources\ModelResource;
 
 /**
  * @extends ModelResource<Custom>

@@ -6,6 +6,7 @@ namespace Ichinya\FontAwesome\Providers;
 
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
+use MoonShine\AssetManager\Css;
 
 final class FontAwesomeServiceProvider extends ServiceProvider
 {
@@ -21,9 +22,9 @@ final class FontAwesomeServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'moonshine-fontawesome');
 
         // fix добавлено заглушкой, потом надо переделать нормально
-        moonshineAssets()->add(
-            'vendor/moonshine-fontawesome/css/moonshine-fontawesome.css'
-        );
+        moonshineAssets()->add([
+            Css::make('vendor/moonshine-fontawesome/css/moonshine-fontawesome.css')->defer(),
+        ]);
 
 
         $this->publishes([
