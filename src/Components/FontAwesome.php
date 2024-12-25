@@ -4,10 +4,11 @@ namespace Ichinya\FontAwesome\Components;
 
 
 use Illuminate\View\ComponentSlot;
+use MoonShine\Support\Enums\Color;
 use MoonShine\UI\Components\MoonShineComponent;
 
 /**
- * @method static static make(string $icon = '', string $color = 'black', string $class = '')
+ * @method static static make(string $icon = '', string|Color $color = 'black', string $class = '')
  */
 class FontAwesome extends MoonShineComponent
 {
@@ -17,7 +18,7 @@ class FontAwesome extends MoonShineComponent
 
     public function __construct(
         public string $icon = '',
-        public string $color = 'black',
+        public string|Color $color = 'black',
         public string $class = '',
     )
     {
