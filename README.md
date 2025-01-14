@@ -22,17 +22,6 @@ composer require ichinya/moonshine-fontawesome-component
 You can use `FontAwesome` component in your resources:
 
 ```php
-<?php
-
-declare(strict_types=1);
-
-use Ichinya\FontAwesome\Components\FontAwesome;
-
-use MoonShine\Laravel\Resources\ModelResource;
-
-/**
- * @extends ModelResource<Custom>
- */
 class CustomResource extends ModelResource
 {
     public function fields(): array
@@ -46,6 +35,19 @@ class CustomResource extends ModelResource
         ];
     }
 }
+```
+
+Use in Menu:
+
+```php
+use Ichinya\FontAwesome\Components\MenuItem;
+
+protected function menu(): array
+    {
+        return [
+            MenuItem::make('Файлы', FileResource::class)->fontAwesomeIcon('<i class="fa-solid fa-upload"></i>'),
+        ];
+    }
 ```
 
 ## Plans
