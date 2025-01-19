@@ -17,9 +17,9 @@ class FontAwesome extends MoonShineComponent
 
 
     public function __construct(
-        public string $icon = '',
+        public string       $icon = '',
         public string|Color $color = 'black',
-        public string $class = '',
+        public string       $class = '',
     )
     {
         parent::__construct();
@@ -58,10 +58,18 @@ class FontAwesome extends MoonShineComponent
         return preg_replace('/fas fa-|fab fa-|far fa-/', '', $name);
     }
 
+    public function toString(): string
+    {
+        try {
+            return $this->__toString();
+        } catch (\Exception $e) {
+            return '';
+        }
+    }
 
     public function __toString(): string
     {
-        return (string) value($this->render(), $this);
+        return (string)value($this->render(), $this);
     }
 
 }
