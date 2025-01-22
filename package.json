@@ -7,7 +7,7 @@
         "prettier": "npx prettier --write 'resources/**/*.{css,js,yml}' '!**/views' '!**/dist' '!**/vendor'"
     },
     "devDependencies": {
-        "vite": "^5.4.11",
+        "vite": "^5.4.14",
         "laravel-vite-plugin": "^1.0.0"
     },
     "dependencies": {
