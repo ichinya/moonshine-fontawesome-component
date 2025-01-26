@@ -19,6 +19,19 @@ composer require ichinya/moonshine-fontawesome-component
 
 ## Usage
 
+Example of usage:
+
+* `FontAwesome::make('<i class="fa-brands fa-telegram"></i>' , 'blue')`
+* `FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue)`
+
+For out:
+
+```php
+    echo FontAwesome::make('fa-brands fa-telegram')->toString();
+    echo FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue)->render();
+    echo (string) FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue);
+```
+
 You can use `FontAwesome` component in your resources:
 
 ```php
@@ -52,9 +65,9 @@ protected function menu(): array
 
 ## Plans
 
-* Macros to Fields.
-* fa-brands fa-telegram => telegram
-* Add more customization options for the FontAwesome Component.
+* [ ] Macros to Fields.
+* [ ] fa-brands fa-telegram => telegram
+* [ ] Add more customization options for the FontAwesome Component.
 
 ## Contributing
 

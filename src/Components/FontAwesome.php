@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Ichinya\FontAwesome\Components;
 
@@ -22,7 +24,16 @@ class FontAwesome extends MoonShineComponent
         public string       $class = '',
     )
     {
+        $this->icon = $this->sanitizeIcon($icon);
         parent::__construct();
+    }
+
+    protected function sanitizeIcon(string $icon): string
+    {
+        if (preg_match('/<i class="([^"]+)"><\/i>/', $icon, $matches)) {
+            return $matches[1];
+        }
+        return $icon;
     }
 
     /**
@@ -33,29 +44,6 @@ class FontAwesome extends MoonShineComponent
         return [
             'slot' => new ComponentSlot($this->icon),
         ];
-    }
-
-    private function getStyleFromDirectory(string $name): string
-    {
-        return match ($name) {
-            'brands' => 'fab fa-',
-            'regular' => 'far fa-',
-            default => 'fas fa-'
-        };
-    }
-
-    private function getDirectoryFromStyle(string $style): string
-    {
-        return match (true) {
-            str_contains($style, 'fab fa-') => 'brands',
-            str_contains($style, 'far fa-') => 'regular',
-            default => 'solid',
-        };
-    }
-
-    private function getShortName(string $name): string
-    {
-        return preg_replace('/fas fa-|fab fa-|far fa-/', '', $name);
     }
 
     public function toString(): string
