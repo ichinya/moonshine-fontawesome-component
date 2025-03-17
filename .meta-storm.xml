@@ -16,6 +16,13 @@
             <collection name="fontawesome_icons_brands"/> <!-- Коллекция иконок brands -->
             <stopCompletion /> <!-- Отключение автодополнения после выбора иконки -->
         </classMethod>
+        <!-- Конфигурация для метода make класса FontAwesome -->
+        <classMethod class="\Ichinya\FontAwesome\Components\MenuItem" method="fontAwesomeIcon" argument="0">
+            <collection name="fontawesome_icons_solid"/> <!-- Коллекция иконок solid -->
+            <collection name="fontawesome_icons_regular"/> <!-- Коллекция иконок regular -->
+            <collection name="fontawesome_icons_brands"/> <!-- Коллекция иконок brands -->
+            <stopCompletion /> <!-- Отключение автодополнения после выбора иконки -->
+        </classMethod>
 
         <!-- Конфигурация для второго аргумента (color) конструктора -->
         <classConstructor class="\Ichinya\FontAwesome\Components\FontAwesome" argument="1">
