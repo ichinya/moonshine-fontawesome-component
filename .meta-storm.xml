@@ -6,7 +6,7 @@
             <collection name="fontawesome_icons_solid"/> <!-- Коллекция иконок solid -->
             <collection name="fontawesome_icons_regular"/> <!-- Коллекция иконок regular -->
             <collection name="fontawesome_icons_brands"/> <!-- Коллекция иконок brands -->
-            <stopCompletion /> <!-- Отключение автодополнения после выбора иконки -->
+            <stopCompletion/> <!-- Отключение автодополнения после выбора иконки -->
         </classConstructor>
 
         <!-- Конфигурация для метода make класса FontAwesome -->
@@ -14,39 +14,41 @@
             <collection name="fontawesome_icons_solid"/> <!-- Коллекция иконок solid -->
             <collection name="fontawesome_icons_regular"/> <!-- Коллекция иконок regular -->
             <collection name="fontawesome_icons_brands"/> <!-- Коллекция иконок brands -->
-            <stopCompletion /> <!-- Отключение автодополнения после выбора иконки -->
+            <stopCompletion/> <!-- Отключение автодополнения после выбора иконки -->
         </classMethod>
+
         <!-- Конфигурация для метода make класса FontAwesome -->
         <classMethod class="\Ichinya\FontAwesome\Components\MenuItem" method="fontAwesomeIcon" argument="0">
             <collection name="fontawesome_icons_solid"/> <!-- Коллекция иконок solid -->
             <collection name="fontawesome_icons_regular"/> <!-- Коллекция иконок regular -->
             <collection name="fontawesome_icons_brands"/> <!-- Коллекция иконок brands -->
-            <stopCompletion /> <!-- Отключение автодополнения после выбора иконки -->
+            <stopCompletion/> <!-- Отключение автодополнения после выбора иконки -->
         </classMethod>
 
         <!-- Конфигурация для второго аргумента (color) конструктора -->
         <classConstructor class="\Ichinya\FontAwesome\Components\FontAwesome" argument="1">
             <collection name="fontawesome_colors"/> <!-- Коллекция цветов из перечисления Color -->
-            <stopCompletion /> <!-- Отключение автодополнения после выбора цвета -->
         </classConstructor>
 
         <!-- Конфигурация для второго аргумента (color) метода make -->
         <classMethod class="\Ichinya\FontAwesome\Components\FontAwesome" method="make" argument="1">
             <collection name="fontawesome_colors"/> <!-- Коллекция цветов из перечисления Color -->
-            <stopCompletion /> <!-- Отключение автодополнения после выбора цвета -->
         </classMethod>
 
     </definitions>
 
     <collections>
         <!-- Коллекция иконок solid из JSON файла -->
-        <jsonFile name="fontawesome_icons_solid" xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/solid.json"/>
+        <jsonFile name="fontawesome_icons_solid"
+                  xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/solid.json"/>
 
         <!-- Коллекция иконок regular из JSON файла -->
-        <jsonFile name="fontawesome_icons_regular" xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/regular.json"/>
+        <jsonFile name="fontawesome_icons_regular"
+                  xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/regular.json"/>
 
         <!-- Коллекция иконок brands из JSON файла -->
-        <jsonFile name="fontawesome_icons_brands" xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/brands.json"/>
+        <jsonFile name="fontawesome_icons_brands"
+                  xpath="$project/vendor/ichinya/moonshine-fontawesome-component/resources/json/brands.json"/>
 
         <!-- Коллекция цветов из перечисления Color -->
         <strings name="fontawesome_colors">
