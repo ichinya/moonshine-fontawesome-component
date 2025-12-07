@@ -6,10 +6,12 @@
 
 - MoonShine v3.0+
 
-| MoonShine | FontAwesomeIcon |
-|-----------|-----------------|
-| 2.0+      | 1.0             |
-| 3.0+      | 1.1+            |
+| MoonShine | FontAwesomeIcon | Comment     |
+|-----------|-----------------|-------------|
+| 2.0+      | 1.0             |             |
+| 3.0+      | 1.1+            | Color::Blue |
+| 4.0+      | 1.3+            | Color::BLUE |
+
 
 ## Installation
 
@@ -22,14 +24,14 @@ composer require ichinya/moonshine-fontawesome-component
 Example of usage:
 
 * `FontAwesome::make('<i class="fa-brands fa-telegram"></i>' , 'blue')`
-* `FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue)`
+* `FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::BLUE)`
 
 For out:
 
 ```php
     echo FontAwesome::make('fa-brands fa-telegram')->toString();
-    echo FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue)->render();
-    echo (string) FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::Blue);
+    echo FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::BLUE)->render();
+    echo (string) FontAwesome::make('fa-brands fa-telegram' , \MoonShine\Support\Enums\Color::BLUE);
 ```
 
 You can use `FontAwesome` component in your resources:
