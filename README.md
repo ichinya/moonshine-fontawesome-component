@@ -4,13 +4,13 @@
 
 ### Requirements
 
-- MoonShine v3.0+
+- MoonShine v4.0+
 
 | MoonShine | FontAwesomeIcon | Comment     |
 |-----------|-----------------|-------------|
 | 2.0+      | 1.0             |             |
 | 3.0+      | 1.1+            | Color::Blue |
-| 4.0+      | 1.3+            | Color::BLUE |
+| 4.0+      | 1.4+            | Color::BLUE |
 
 
 ## Installation
